@@ -2,8 +2,8 @@
 
 /**
  * Optimum Container Calculator
- * Calculate the optimum number of large and small containers to hold packages to be shipped
  * @author fknoedt@gmail.com
+ * @see https://github.com/fknoedt/container-calculator/
  */
 class ContainerCalculator
 {
@@ -98,9 +98,11 @@ class ContainerCalculator
 	}
 
 	/**
+	 * Calculate the optimum number of large and small containers to hold packages to be shipped
 	 * @param $packageNumber
-	 * @param $smallContainersAvailable
-	 * @param $largeContainersAvailable
+	 * @param null $smallContainersAvailable
+	 * @param null $largeContainersAvailable
+	 * @return bool
 	 * @throws CalculateException
 	 */
 	public function calculate($packageNumber, $smallContainersAvailable=null, $largeContainersAvailable=null)
@@ -219,6 +221,5 @@ class ContainerCalculator
 		return $this->results['small_needed'] == 0 && $this->results['large_needed'] == 0;
 
 	}
-
 
 }
