@@ -2,10 +2,8 @@
 
 /**
  * Optimum Container Calculator
- *
+ * Calculate the optimum number of large and small containers to hold packages to be shipped
  * @author fknoedt@gmail.com
- * @date 10/23/2018
- * @rotina $rotinaAqui
  */
 class ContainerCalculator
 {
