@@ -217,11 +217,8 @@ class ContainerCalculator
 		if($lastLargeContainer != self::LARGE_CONTAINER_CAPACITY)
 			$this->results['last_large_container_empty_slots'] = self::LARGE_CONTAINER_CAPACITY - $lastLargeContainer;
 
-		//
-		if($this->results['small_needed'] > 0 || $this->results['large_needed']) {
-
-
-		}
+		// if no small or large container is needed, return true; else, return false
+		return $this->results['small_needed'] == 0 && $this->results['large_needed'] == 0;
 
 	}
 
