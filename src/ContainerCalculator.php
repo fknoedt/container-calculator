@@ -2,8 +2,6 @@
 
 /**
  * Optimum Container Calculator
- * @author fknoedt@gmail.com
- * @see https://github.com/fknoedt/container-calculator/
  */
 class ContainerCalculator
 {
@@ -77,14 +75,9 @@ class ContainerCalculator
 	 */
 	public function __construct($smallContainersAvailable=null, $largeContainersAvailable=null, $largeContainerPercentage=null)
 	{
-		if($largeContainerPercentage)
-			$this->largeContainerPercentage = $largeContainerPercentage;
-
-		if($smallContainersAvailable)
-			$this->smallContainersAvailable = $smallContainersAvailable;
-
-		if($largeContainersAvailable)
-			$this->largeContainersAvailable = $largeContainersAvailable;
+		$this->largeContainerPercentage = $largeContainerPercentage;
+		$this->smallContainersAvailable = $smallContainersAvailable;
+		$this->largeContainersAvailable = $largeContainersAvailable;
 	}
 
 	/**
